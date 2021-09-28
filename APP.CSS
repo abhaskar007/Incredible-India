@@ -1,0 +1,118 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://previews.123rf.com/images/snapgalleria/snapgalleria1803/snapgalleria180300029/97298136-nested-doll-indian-couple-representing-diverse-culture-from-different-states.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background:rgba(0,0,0,0.3);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+text-transform: uppercase;}
+nav.logo{width: 25%;
+text-align: center;}
+nav .menu{width: 40%;
+display: flex;
+justify-content: space-around;}
+nav .menu a{width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav .menu a:first-child{color: #00b894;}
+nav h1{padding-left: 25px;
+font-size: 30px;
+}
+main{width: 100%;
+height: 85vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;}
+
+section{}
+
+section h3{font-size: 50px;
+font-weight: 200;
+letter-spacing: 2px;
+text-shadow:1px 1px 2px black;}
+
+section h1{font-size: 55px;
+font-weight: 700;
+text-shadow: 2px 1px 5px black ;
+text-transform: uppercase;
+margin: 30px 0 20px o ;}
+
+section p{
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow:2px 1px 5px black ;
+    word-spacing: 8px;}
+
+section a{padding: 12px 30px;
+border-radius: 4px;
+outline: none;
+text-transform: uppercase;
+font-size: 13px;
+font-weight: 500;
+text-decoration: none;
+letter-spacing: 1px;
+transition: all .5s ease;
+
+}
+
+section .btn1{background-color: #fff;
+    color: black;
+  
+}
+.btn1:hover{background-color: #deff0a;
+    color: black;}
+
+section .btn2{background-color: #00b894;
+    color: white;
+}
+.btn2:hover{background-color: #deff0a;
+    color: black;}
+
+.changectn::before {
+    content: "DELHI";
+    animation: animate infinite 8s;
+    padding-left: 10px;
+    color: #00b894;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "DELHI";
+    }
+    20% {
+        content: "MUMBAI";
+    }
+
+    40% {
+        content: "PATNA";
+    }
+
+    60% {
+        content: "KERLA";
+    }
+    80% {
+        content: "KASHMIR";
+    }
+    100% {
+        content: "HYDERABAD";
+    }
+}
